@@ -1,0 +1,26 @@
+extends ../layout/layout.pug
+include ../mixin/cardStats.pug
+include ../mixin/card.pug
+
+block title
+    title Dashboard
+
+block main-content
+    .content
+        .row
+            .col-lg-3
+                +cardStats('../../src/img/cloud.svg', 'Capacity', '150GB')
+            .col-lg-3
+                +cardStats('../../src/img/wallet.svg', 'Revenue', '$ 1,345')
+            .col-lg-3
+                +cardStats('../../src/img/error.svg', 'Errors', '23')
+            .col-lg-3
+                +cardStats('../../src/img/heart.svg', 'Followers', '+45K')
+        .row
+            .col-lg-12
+                +card('Users Behavior', '24 Hours Performance', 'chartHour', 'Updated 3 minutes ago')
+        .row
+            .col-lg-4
+                +card('Email Statistics', 'Last Campaign Performance', 'chartEmail', 'Number of emails sent')
+            .col-lg-8
+                +card('NASDAQ: AAPL', 'Line Chart With Points', 'chartSpeed', 'Data information certified')

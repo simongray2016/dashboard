@@ -1,0 +1,15 @@
+mixin cardStats(src, category, title)
+    .card
+        .card-body
+            .row
+                .col-lg-5
+                    .icon
+                        img(src=src)
+                .col-lg-7
+                    .numbers.text-right
+                        .card-category= category
+                        .card-title
+                            h3= title
+        .card-footer
+            img(src='../../src/img/check.svg')
+            |Update now

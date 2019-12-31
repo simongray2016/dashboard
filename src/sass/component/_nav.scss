@@ -1,0 +1,29 @@
+.navbar {
+    padding: 10px 30px;
+    border-bottom: 1px solid #ddd;
+    &__brand {
+        font-size: 20px;
+        color: $grey1;
+    }
+    &__item {
+        form {
+            border-radius: 2px;
+            background: #EEEDEA;
+            padding-right: 11px;
+            input {
+                padding: 11px;
+                border: none;
+                background: #EEEDEA;
+                outline: none;
+            }
+        }
+        ul {
+            li {
+                a {
+                    display: block;
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+}

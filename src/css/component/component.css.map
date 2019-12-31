@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEQ,iBAAI;EACA,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI",
+"sources": ["../../sass/component/_nav.scss"],
+"names": [],
+"file": "component.css"
+}

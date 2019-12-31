@@ -1,0 +1,65 @@
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    &__logo {
+        display: block;
+        color: $grey1;
+        text-transform: uppercase;
+        padding: 15px;
+        position: relative;
+        img {
+            width: 34px;
+            height: 34px;
+            margin-right: 10px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 15px;
+            height: 1px;
+            background: $grey2;
+            width: calc(100% - 30px);
+        }
+    }
+    &__wrapper {
+        padding-top: 20px;
+        .item {
+            a {
+                display: block;
+                text-transform: uppercase;
+                color: $grey2;
+                padding: 15px 30px;
+                font-size: 12px;
+                transition: all 0.5s;
+                img {
+                    margin-right: 12px;
+                }
+                &:hover {
+                    color: $orange;
+                }
+            }
+            .active {
+                color: $orange;
+                position: relative;
+                &::before, &::after {
+                    border-top: 12px solid transparent;
+                    border-bottom: 12px solid transparent;
+                    content: "";
+                    position: absolute;
+                    top: calc(50% - 12px);
+                }
+                &::before {
+                    border-right: 17px solid #ddd;
+                    right: -1px;
+                }
+                &::after {
+                    border-right: 17px solid #f4f3ef;
+                    right: -2px;
+                }
+            }
+        }
+    }
+}

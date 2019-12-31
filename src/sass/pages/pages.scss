@@ -1,0 +1,24 @@
+@import 'user';
+
+.table {
+    thead {
+        th {
+            border: none;
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: $blue;
+            &:last-child {
+                text-align: right;
+            }
+        }
+    }
+    &__content {
+        tr {
+            td {
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

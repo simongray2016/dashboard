@@ -1,0 +1,21 @@
+extends ../layout/layout.pug
+
+block title
+    title Table
+
+block main-content
+    .content
+        .row
+            .col-lg-12
+                .card
+                    .card-header
+                        h4.card-title Simple Table
+                    .card-body
+                        table.table
+                            thead
+                                tr
+                                    th name
+                                    th country
+                                    th city
+                                    th salary
+                            tbody.table__content

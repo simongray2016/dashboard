@@ -1,0 +1,71 @@
+extends ../layout/layout.pug
+include ../mixin/formGroup.pug
+
+block title
+    title User
+block main-content
+    .content
+        .row
+            .col-lg-4 
+                .card.user
+                    .card-header.user__bg
+                        img(src='../../src/img/bg-user.jpg')
+                    .card-body
+                        .user__author
+                            img(src='../../src/img/user.jpg')
+                            h5 Chet Faker
+                        p.user__description.text-center @chetfaker
+                            br
+                            br
+                            |"I like the way you work it
+                            br
+                            |No diggity
+                            br
+                            |I wanna bag it up"
+                    .card-footer  
+                        .row.text-center 
+                            .col-lg-4 
+                                h5 12
+                                small Files
+                            .col-lg-4 
+                                h5 2GB
+                                small Used
+                            .col-lg-4 
+                                h5 24,6$
+                                small Spent
+            .col-lg-8
+                .card
+                    .card-header
+                        h5.card-title Edit Profile
+                    .card-body
+                        form
+                            .row
+                                .col-lg-5.pr-1
+                                    +formGroup('Company', 'text', 'Creative Code Inc.')
+                                .col-lg-3.px-1
+                                    +formGroup('Username', 'text', 'michael23')
+                                .col-lg-4.pl-1
+                                    +formGroup('Email address', 'text', 'Email')
+                            .row
+                                .col-lg-6.pr-1
+                                    +formGroup('First Name', 'text', 'Chet')
+                                .col-lg-6.pl-1
+                                    +formGroup('Last Name', 'text', 'Faker')
+                            .row
+                                .col-lg-12
+                                    +formGroup('Address', 'text', 'Melbourne, Australia')
+                            .row
+                                .col-lg-4.pr-1
+                                    +formGroup('City', 'text', 'Melbourne')
+                                .col-lg-4.pr-1
+                                    +formGroup('Country', 'text', 'Australia')
+                                .col-lg-4.pr-1
+                                    +formGroup('Postal Code', 'number', 'ZIP Code')
+                            .row
+                                .col-lg-12
+                                    .form-group
+                                        label About Me
+                                        textarea.form-control Oh so, your weak rhyme You doubt I'll bother, reading into it
+                            .row
+                                .mx-auto
+                                    button.btn.btn-primary.btn-round(type='submit') Update Profile

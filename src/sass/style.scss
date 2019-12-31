@@ -1,0 +1,14 @@
+@import 'variable';
+@import 'normalize';
+@import 'common';
+@import 'component/component';
+@import 'pages/pages.scss';
+
+.main-panel {
+    background: #f4f3ef;
+    margin-left: 260px;
+    width: calc(100% - 260px);
+}
+.content {
+    padding: 30px;
+}

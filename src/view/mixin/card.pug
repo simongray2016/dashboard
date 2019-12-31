@@ -1,0 +1,11 @@
+mixin card(title, category, id, footer)
+    .card
+        .card-header
+            .card-title
+                h4= title
+            .card-category= category
+        .card-body
+            canvas(id=id)
+        .card-footer
+            img(src='../../src/img/check.svg')
+            = footer

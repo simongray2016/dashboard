@@ -1,0 +1,188 @@
+nav {
+  padding: 0; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+a:hover {
+  text-decoration: none;
+  color: inherit; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box; }
+
+.navbar {
+  padding: 10px 30px;
+  border-bottom: 1px solid #ddd; }
+  .navbar__brand {
+    font-size: 20px;
+    color: #66615b; }
+  .navbar__item form {
+    border-radius: 2px;
+    background: #EEEDEA;
+    padding-right: 11px; }
+    .navbar__item form input {
+      padding: 11px;
+      border: none;
+      background: #EEEDEA;
+      outline: none; }
+  .navbar__item ul li a {
+    display: block;
+    margin: 0 20px; }
+
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  border-right: 1px solid #ddd;
+  position: fixed; }
+  .sidebar__logo {
+    display: block;
+    color: #66615b;
+    text-transform: uppercase;
+    padding: 15px;
+    position: relative; }
+    .sidebar__logo img {
+      width: 34px;
+      height: 34px;
+      margin-right: 10px; }
+    .sidebar__logo::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 15px;
+      height: 1px;
+      background: #9a9a9a;
+      width: calc(100% - 30px); }
+  .sidebar__wrapper {
+    padding-top: 20px; }
+    .sidebar__wrapper .item a {
+      display: block;
+      text-transform: uppercase;
+      color: #9a9a9a;
+      padding: 15px 30px;
+      font-size: 12px;
+      transition: all 0.5s; }
+      .sidebar__wrapper .item a img {
+        margin-right: 12px; }
+      .sidebar__wrapper .item a:hover {
+        color: #F2986C; }
+    .sidebar__wrapper .item .active {
+      color: #F2986C;
+      position: relative; }
+      .sidebar__wrapper .item .active::before, .sidebar__wrapper .item .active::after {
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        content: "";
+        position: absolute;
+        top: calc(50% - 12px); }
+      .sidebar__wrapper .item .active::before {
+        border-right: 17px solid #ddd;
+        right: -1px; }
+      .sidebar__wrapper .item .active::after {
+        border-right: 17px solid #f4f3ef;
+        right: -2px; }
+
+.footer {
+  padding: 24px 20px; }
+  .footer__nav li a {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #252422;
+    padding: 0 10px; }
+  .footer__copyright {
+    font-size: 12px; }
+
+.card {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px; }
+  .card-header, .card-footer {
+    background: #fff; }
+  .card-header {
+    border-radius: 12px 12px 0px 0px !important;
+    border-bottom: none; }
+  .card-footer {
+    border-radius: 0px 0px 12px 12px !important; }
+    .card-footer img {
+      vertical-align: baseline;
+      width: 14px;
+      height: 14px;
+      margin-right: 10px; }
+  .card-category {
+    color: #9a9a9a;
+    font-size: 14px; }
+  .card-title {
+    margin: 10px 0; }
+
+.form-group {
+  margin-bottom: 20px; }
+  .form-group label {
+    font-size: 12px;
+    color: #9a9a9a; }
+  .form-group .form-control {
+    font-size: 14px; }
+
+.user__bg {
+  position: relative;
+  overflow: hidden;
+  height: 130px; }
+  .user__bg img {
+    width: 140%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0; }
+.user__author {
+  text-align: center;
+  margin-top: -82px; }
+  .user__author img {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: relative;
+    margin-bottom: 15px; }
+  .user__author h5 {
+    color: #51cbce;
+    font-weight: bolder;
+    margin-bottom: 15px; }
+.user__description {
+  color: #9a9a9a;
+  line-height: 20px; }
+
+.btn-round {
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  background: #51cbce;
+  border: none;
+  padding: 10px 15px;
+  transition: all 0.5s; }
+  .btn-round:hover {
+    background: #34b5b8; }
+
+.table thead th {
+  border: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #51cbce; }
+  .table thead th:last-child {
+    text-align: right; }
+.table__content tr td:last-child {
+  text-align: right; }
+
+.main-panel {
+  background: #f4f3ef;
+  margin-left: 260px;
+  width: calc(100% - 260px); }
+
+.content {
+  padding: 30px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACI,MAAE;EACE,eAAe,EAAE,IAAI;EACrB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;;ACFV,iBAAI;EACA,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI",
+"sources": ["../sass/_normalize.scss","../sass/component/_nav.scss"],
+"names": [],
+"file": "style.css"
+}

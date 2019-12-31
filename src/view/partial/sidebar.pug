@@ -1,0 +1,12 @@
+include ../mixin/sidebarItem.pug
+
+.sidebar 
+    a.sidebar__logo(href='#') 
+        img(src="https://demos.creative-tim.com/paper-dashboard/assets/img/logo-small.png")
+        |creative tim
+    ul.sidebar__wrapper
+        +sidebarItem('./index.html', '../../src/img/rocket.svg', 'dashboard')
+        +sidebarItem('./map.html', '../../src/img/map.svg', 'maps')
+        +sidebarItem('./index.html', '../../src/img/notification.svg', 'notifications')
+        +sidebarItem('./user.html', '../../src/img/user.svg', 'users profile')
+        +sidebarItem('./table.html', '../../src/img/table.svg', 'table list')
